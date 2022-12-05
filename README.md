@@ -62,18 +62,18 @@ This code is a Python script for encoding payloads to be used in cross-site scri
 
 The script has a number of functions and classes that are used to format, split, and encode the payload so that it can be delivered to the server in a way that avoids detection.
 
-The script begins by importing a number of modules that it will use, including sys, argparse, string, logging, and re. These modules provide various functions that are used for input/output, command-line argument parsing, string manipulation, logging, and regular expressions.
+The script begins by importing a number of modules that it will use, including `sys, argparse, string, logging, and re`. These modules provide various functions that are used for input/output, command-line argument parsing, string manipulation, logging, and regular expressions.
 
 Next, the script defines a number of colors that can be used for logging messages. This is used to make the log output more readable by coloring different types of messages differently.
 
-The ColorFormatter class is then defined, which is a subclass of the logging.Formatter class. This class is used to format log messages in a way that includes color codes to display the messages in the appropriate colors.
+The `ColorFormatter class` is then defined, which is a subclass of the `logging.Formatter class`. This class is used to format log messages in a way that includes color codes to display the messages in the appropriate colors.
 
-The MAX_JS_INT constant is defined next, and is set to the maximum safe integer value in JavaScript.
+The `MAX_JS_INT` constant is defined next, and is set to the maximum safe integer value in JavaScript.
 
 The Payload class is then defined, which is used to represent a payload as a string. This class provides methods for appending, prepending, and splitting the payload string into multiple lines.
 
-The split_to_len function is defined next, which takes a string and a maximum length and splits the string into multiple lines, each of which has at most the specified maximum length. This is used to split the payload into multiple lines that can be encoded and delivered to the server in a way that avoids detection.
+The `split_to_len` function is defined next, which takes a string and a maximum length and splits the string into multiple lines, each of which has at most the specified maximum length. This is used to split the payload into multiple lines that can be encoded and delivered to the server in a way that avoids detection.
 
-The main function is then defined, which is the entry point for the script. This function parses the command-line arguments, sets up logging, and then processes the payload based on the specified options.
+The `main` function is then defined, which is the entry point for the script. This function parses the command-line arguments, sets up logging, and then processes the payload based on the specified options.
 
 Overall, this script provides a means for encoding payloads for use in XSS attacks in a way that avoids detection.
